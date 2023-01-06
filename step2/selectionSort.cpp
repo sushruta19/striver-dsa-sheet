@@ -14,9 +14,12 @@ void selectionSort(int arr[], int n) {
 }
 
 /* Generally performs worse than insertion sort
+ * Its time complexity is always n(n-1)/2 no matter how the array is whereas
+   insertion sort in worst case has time complexity n(n-1)/2.
+ * It is not an online algo like insertion sort which can handle new incoming data.
  * Known for simplicity
  * Can be useful where auxiliarry memory is limited
  * outperforms bubble sort and gnome sort
  * if writes are more expensive than reads, then selection sort is preferable
-   to insertion sort in terms of number of writes(n-1 swaps vs (n-1)(n)/2 swaps
+   to insertion sort in terms of number of writes(n-1 swaps vs (n-1)(n)/2 swaps)
 */
